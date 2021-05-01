@@ -2,12 +2,12 @@
     "type":"postgres",
     "host":"localhost",
     "port":5432,
-    "username":"postgres",
-    "password":"postgres",
-    "database":"mas",
-    "migration":["./src/databases/migrations/**.ts"],
-    "entities":["./models/*.ts"],
+    "username":"masdev",
+    "password":"masdev",
+    "database":"masdev",
+    "migrations":["./src/database/migrations/*.ts"],
+    "entities":["./model/*.ts"],
     "cli": {
-        "migrationsDir": "./src/databases/migrations"
+        "migrationsDir": "./src/database/migrations"
     }
 }
