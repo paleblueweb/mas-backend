@@ -11,5 +11,14 @@ class CourseUnitController{
 
         return response.json(courseUnity);
     }
+    async show(request: Request, response:Response){
+        const userId = request.body.user;
+
+        const getCourseUnits = new GetCourseUnitsService();
+
+        const courseUnits = await getCourseUnits.execute(userId);
+
+        return response.json(courseUnits);     
+    }
 }
 export {CourseUnitController};
