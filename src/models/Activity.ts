@@ -21,6 +21,9 @@ class Activity {
     @Column()
     course_unit_id: string;
 
+    @Column()
+    grade: number;
+    
     @CreateDateColumn()
     created_at: Date;
 

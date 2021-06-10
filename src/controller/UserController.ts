@@ -11,5 +11,8 @@ class UserController {
 
         return response.json(user);
     }
+    async show(){
+        
+    }
 }
 export {UserController};
